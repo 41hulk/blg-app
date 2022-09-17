@@ -16,10 +16,7 @@ RSpec.describe Comment, type: :model do
     end
 
     it 'should update the comments counter' do
-        expect(comment.send(:update_comments_counter)).to be_valid
+      expect(comment.send(:update_comments_counter)).to be_valid
     end
   end
-
-  
-  
 end
