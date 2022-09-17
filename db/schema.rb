@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_17_125519) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.text "title"
+    t.string "title"
     t.text "text"
     t.integer "comments_counter", default: 0
     t.integer "likes_counter", default: 0
@@ -45,8 +45,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_17_125519) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.text "name"
-    t.text "photo"
+    t.string "name"
+    t.string "photo"
     t.text "bio"
     t.integer "posts_counter", default: 0
     t.datetime "created_at", null: false
