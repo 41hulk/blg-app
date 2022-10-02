@@ -1,0 +1,2 @@
+class ChangeCountersToZero < ApplicationRecord
+end
